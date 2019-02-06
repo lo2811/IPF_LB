@@ -10,4 +10,4 @@ output:
 
 In this illustration, I use a small PBMC data set (from Austin) to practice using Seurat. All the steps are included, including codes and plots. 
 
-Click on this [link](first-analysis.html) to see my results.
+Click on this [link](script.html) to see my results.
