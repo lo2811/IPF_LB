@@ -6,4 +6,8 @@ output:
     toc: false
 ---
 
-Welcome to my research website.
+# **Project Description**
+
+In this illustration, I use a small PBMC data set (from Austin) to practice using Seurat. All the steps are included, including codes and plots. 
+
+Click on this [link](first-analysis.html) to see my results.
