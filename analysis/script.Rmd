@@ -57,9 +57,9 @@ VlnPlot(pbmc,"MS4A1")
 canonical_markers <- c("IL7R", "CD14", "LYZ", "MS4A1", "CD8A", "FCGR3A", "MS4A7", "GNLY", "NKG7", "FCER1A", "CST3", "PPBP")
 DotPlot(pbmc, genes.plot = canonical_markers, x.lab.rot = TRUE, plot.legend = TRUE)
 
-current.cluster.ids <- c(0, 1, 2, 3, 4, 5, 6, 7)
-new.cluster.ids <- c("CD4 T cells", "CD14+ Monocytes", "B cells", "CD8 T cells", 
-    "FCGR3A+ Monocytes", "NK cells", "Dendritic cells", "Megakaryocytes")
+current.cluster.ids <- c(0, 1, 2, 3, 4, 5, 6)
+new.cluster.ids <- c("CD4 T cells", "CD14+ Monocytes", "B cells", "NK cells", 
+    "CD8 T Cells", "Unknown", "FCGR3A+ Monocytes")
 pbmc@ident <- plyr::mapvalues(x = pbmc@ident, from = current.cluster.ids, to = new.cluster.ids)
 TSNEPlot(object = pbmc, do.label = TRUE, pt.size = 0.5)
 ```
