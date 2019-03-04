@@ -1,20 +1,21 @@
-name: "IPF_LB"
-output_dir: "../docs"
+name: IPF_LB
+output_dir: ../public
 navbar:
-  title: "IPF_LB"
+  title: IPF_LB
   left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
-    - text: "License"
-      href: license.html
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: License
+    href: license.html
   right:
-    - icon: fa-github
-      href: https://github.com/lo2811/IPF_LB
+  - icon: fa-gitlab
+    text: Source code
+    href: https://gitlab.com/lbui28/IPF_LB
 output:
   workflowr::wflow_html:
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
     theme: spacelab
     highlight: textmate
